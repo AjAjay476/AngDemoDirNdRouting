@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Directives</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="AngularScripts/AppModule/angular-ui-router.min.js"></script>
+   <!-- <script src="AngularScripts/AppModule/lazyloader.js"></script>-->
+    <script src="AngularScripts/AppModule/AppModule.js"></script>
+    <script src="AngularScripts/AppModule/AppController.js"></script>
+    <script src="AngularScripts/AppModule/AppDirective.js"></script>
+    <script src="AngularScripts/AppModule/txtRoute1Controller.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCntrl">
+
+        WellCome to Angular JS ...
+
+        <div>THis is my first app</div>
+
+        <!--<label ng-click="updateCtrlData('From 1 list item')">First Item</label><br />
+        <label ng-click="updateCtrlData('From 2 list item')">second Item</label><br />
+        <label ng-click="updateCtrlData('From 3 list item')">third Item</label><br />
+        
+        {{ctrlVar}}<br/>
+
+        <div my-first-dir dataFromCtrl="ctrlVar"></div>-->
+       
+        <!--<a href="#!">Home</a>
+    <a href="#!route1/is From Page 1">Page 1</a>
+    <a href="#!route2">Page 2</a>
+    <a href="#!home">Page 3</a>
+    <div ng-view></div>-->
+    <input type="button" ng-click="goTopage1();" value="Show PAGE 1"/>
+    <div ui-view="pageView"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!--<lable>{{ctrlTxt}}</lable>
+<div my-first-dir cntrlfucn="cntrlFucn()"></div>
+<div class="my-first-dir" dirtxt1="ctrlTxt"></div>
+ directive: my-first-dir
+<div my-first-dir dirtxt="{{ctrlTxt}}"></div>
+<my-first-dir></my-first-dir>
+<div class="my-first-dir"></div>-->
